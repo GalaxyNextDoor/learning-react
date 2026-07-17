@@ -1,4 +1,5 @@
 import Student from "./Student"
+import Like from "./Like"
 
 export default function App(){
   let student = [
@@ -30,6 +31,8 @@ export default function App(){
   ]
   return(
     <div className="App">
+      <Like></Like>
+
       <h1 style={{
         color:"rgb(0,0,256)"
 
