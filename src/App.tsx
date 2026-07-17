@@ -41,7 +41,7 @@ export default function App(){
         {
           color:"red"
         }
-      }>aloo reddy santosh</p>
+      }>by sandeep reddy vanga</p>
       
     </div>
   )
