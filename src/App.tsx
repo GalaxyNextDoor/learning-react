@@ -1,5 +1,6 @@
 import Student from "./Student"
-import Like from "./Like"
+// import Like from "./Like"
+import Formy from "./form/Formy"
 
 export default function App(){
   let student = [
@@ -31,7 +32,7 @@ export default function App(){
   ]
   return(
     <div className="App">
-      <Like></Like>
+      {/* <Like></Like> */}
 
       <h1 style={{
         color:"rgb(0,0,256)"
@@ -45,6 +46,8 @@ export default function App(){
           color:"red"
         }
       }>by sandeep reddy vanga</p>
+      <Formy/>
+      
       
     </div>
   )

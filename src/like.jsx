@@ -7,9 +7,18 @@ const Like = () => {
         
             <div>
                 <h1>Like</h1>
-                <div id="heart" onClick={() => setHeart(!heart)}>
+                <div id="heart" onClick={() => {
+                    setHeart(!heart);
+                    setLike(like + 1);
+                }}
+                style={{
+                    fontSize:"50px",
+                    cursor: "pointer"
+                }}
+                >
                     {heart ? "❤️" : "🤍"}
                 </div>
+                <br />
                 <p>{like}</p>
             </div>
     )
