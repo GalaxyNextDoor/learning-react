@@ -1,19 +1,25 @@
-// import Like from "./Like"
-import BlueFilm from "./blue_film"
-import Formy from "./form/Formy"
-import GetData from "./apiCall/GetData"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import NavBar from "./components/NavBar"
+import Home from "./components/Home"
+import About from "./components/About"
 
-export default function App(){
+export default function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <NavBar />,
+      children: [
+        {
+          path: "home",
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+      ],
+    },
+  ])
 
-  return(
-    <div className="App">
-      {/* <Like></Like> */}
-
-      {/* <BlueFilm/>
-      <Formy/> */}
-      
-      <GetData/>
-      
-    </div>
-  )
+  return <RouterProvider router={router} />
 }
